@@ -1,9 +1,6 @@
-from django.urls import include
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.index),
+    path('', views.index, name='home'),
 ]
-
-path("hello/", include("hello.urls")),
